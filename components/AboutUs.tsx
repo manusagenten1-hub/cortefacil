@@ -61,7 +61,7 @@ export const AboutUs: React.FC = () => {
             </div>
 
             {/* Feature Grid */}
-            <div className="grid grid-cols-2 gap-6 pt-4 border-t border-dark-700/50">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t border-dark-700/50">
               <div className="space-y-2">
                 <div className="bg-dark-700 w-10 h-10 flex items-center justify-center rounded-lg text-gold-500 mb-2">
                   <Award className="w-5 h-5" />
