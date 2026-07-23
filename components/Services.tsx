@@ -14,10 +14,10 @@ export const Services: React.FC = () => {
           {SERVICES.map((service) => (
             <div 
               key={service.id}
-              className="flex gap-5 items-start group"
+              className="flex gap-4 sm:gap-5 items-start group min-w-0"
             >
               {/* Image as Bullet Point */}
-              <div className="w-20 h-20 md:w-24 md:h-24 shrink-0 rounded-xl overflow-hidden border border-dark-700 shadow-lg group-hover:border-gold-500/50 transition-all duration-300 relative">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 shrink-0 rounded-xl overflow-hidden border border-dark-700 shadow-lg group-hover:border-gold-500/50 transition-all duration-300 relative">
                  <div className="absolute inset-0 bg-dark-900/10 group-hover:bg-transparent transition-colors z-10"></div>
                 <img 
                   src={service.imageUrl} 
@@ -27,17 +27,17 @@ export const Services: React.FC = () => {
               </div>
 
               {/* Text Content */}
-              <div className="flex-1 min-w-0 flex flex-col justify-center h-full">
-                <div className="flex justify-between items-baseline mb-2 border-b border-dark-800 border-dashed pb-2">
-                  <h3 className="text-lg font-bold text-white truncate group-hover:text-gold-500 transition-colors">
+              <div className="flex-1 min-w-0 flex flex-col justify-center">
+                <div className="flex justify-between items-baseline gap-2 mb-2 border-b border-dark-800 border-dashed pb-2 min-w-0">
+                  <h3 className="text-base sm:text-lg font-bold text-white truncate group-hover:text-gold-500 transition-colors flex-1 min-w-0">
                     {service.name}
                   </h3>
-                  <span className="text-gold-500 font-bold whitespace-nowrap ml-4 text-lg">
+                  <span className="text-gold-500 font-bold whitespace-nowrap text-base sm:text-lg shrink-0">
                     R$ {service.price},00
                   </span>
                 </div>
                 
-                <p className="text-gray-400 text-sm leading-relaxed line-clamp-2">
+                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed line-clamp-2">
                   {service.description}
                 </p>
               </div>
