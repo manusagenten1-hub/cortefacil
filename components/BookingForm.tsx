@@ -196,7 +196,7 @@ export const BookingForm: React.FC = () => {
                     Agenda cheia ou horário encerrado para hoje.
                   </div>
                 ) : (
-                  <div className="grid grid-cols-4 gap-2 max-h-48 overflow-y-auto custom-scrollbar">
+                  <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 max-h-48 overflow-y-auto custom-scrollbar">
                     {availableSlots.map(slot => (
                       <button
                         key={slot}
