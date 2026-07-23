@@ -41,13 +41,19 @@ export const LocationContact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-white text-lg">Horário de Atendimento</h3>
-                  <div className="grid grid-cols-2 gap-x-8 gap-y-1 mt-1">
-                    <span className="text-gray-400">Segunda - Sexta</span>
-                    <span className="text-white font-mono text-right">09:00 - 19:00</span>
-                    <span className="text-gray-400">Sábado</span>
-                    <span className="text-white font-mono text-right">09:00 - 15:00</span>
-                    <span className="text-gray-500">Domingo</span>
-                    <span className="text-gray-500 font-mono text-right">Fechado</span>
+                  <div className="flex flex-col gap-1 mt-2 text-sm sm:text-base">
+                    <div className="flex justify-between gap-4 border-b border-dark-700/50 pb-1">
+                      <span className="text-gray-400">Segunda - Sexta</span>
+                      <span className="text-white font-mono">09:00 - 19:00</span>
+                    </div>
+                    <div className="flex justify-between gap-4 border-b border-dark-700/50 pb-1">
+                      <span className="text-gray-400">Sábado</span>
+                      <span className="text-white font-mono">09:00 - 15:00</span>
+                    </div>
+                    <div className="flex justify-between gap-4">
+                      <span className="text-gray-500">Domingo</span>
+                      <span className="text-gray-500 font-mono">Fechado</span>
+                    </div>
                   </div>
                 </div>
               </div>
